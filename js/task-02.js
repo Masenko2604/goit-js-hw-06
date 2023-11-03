@@ -1,16 +1,18 @@
-const ingredients = [
-  "Potatoes",
-  "Mushrooms",
-  "Garlic",
-  "Tomatos",
-  "Herbs",
-  "Condiments",
-];
 
+// const ingredients = [
+//   "Potatoes",
+//   "Mushrooms",
+//   "Garlic",
+//   "Tomatos",
+//   "Herbs",
+//   "Condiments",
+// ];
 
-const list = document.createElement('li')
-const h3 = document.createElement('h3')
-const item = document.createElement('item')
+// const list = document.querySelectorSelector('.js-list')
+// function createMarcup(arr) {
+//   const marcup = arr.map(({ ingredients }) => {
+//     const li = document.createElement('li')
+//   })
 
-h3.textContent = name;
-item.textContent = type;
+  
+// }
