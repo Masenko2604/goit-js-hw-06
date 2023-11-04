@@ -8,11 +8,24 @@
 //   "Condiments",
 // ];
 
-// const list = document.querySelectorSelector('.js-list')
-// function createMarcup(arr) {
-//   const marcup = arr.map(({ ingredients }) => {
-//     const li = document.createElement('li')
-//   })
+
+
+// console.log(document);
+
+// const body = document.body;
+// console.log(body);
+
+// const list = document.querySelector(".list");
+// console.log(list);
+
+// const firstListItem = list.firstElementChild;
+// console.log(firstListItem);
+
+// const lastListItem = list.lastElementChild;
+// console.log(lastListItem);
+
+// const listItems = list.children;
+// console.log(listItems);
+
 
   
-// }
