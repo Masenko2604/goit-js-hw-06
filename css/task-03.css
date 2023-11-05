@@ -1,6 +1,7 @@
-.gallery {
-display: flex;
-flex-wrap: wrap;
-gap: 10px;
+body {
+  margin: 8px;
+}
 
+img {
+  width: 300px;
 }

@@ -1,31 +1,20 @@
-const images = [
-  {
-    url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260",
-    alt: "White and Black Long Fur Cat",
-  },
-  {
-    url: "https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?dpr=2&h=750&w=1260",
-    alt: "Orange and White Koi Fish Near Yellow Koi Fish",
-  },
-  {
+const galleryItems = [
+    {
+        url: 'https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+        alt: 'White and Black Long Fur Cat',
+    },
+    {
+        url: 'https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+        alt: 'Orange and White Koi Fish Near Yellow Koi Fish',
+    },
+    {
     url: "https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?dpr=2&h=750&w=1260",
     alt: "Group of Horses Running",
   },
 ];
 
-const galleryList = document.querySelector('ul');
-console.log(galeryList);
-
-const createGalleryItem = (url, alt) => {
-  return `<li><img src="${url}" alt="${alt}"></li>`;
-};
-
-const createGallery = (images) => {
-  const galleryMarkup = images.reduce((markup, { url, alt }) => {
-    return markup + createGalleryItem(url, alt);
-  }, '');
-  
-  gallery.insertAdjacentHTML('beforeend', galleryMarkup);
-};
-
-console.log(createGallery(images));
+for (let el of galleryItems)
+  document.querySelector('.list')
+    .insertAdjacentHTML('beforeEnd', `<li><img src="${el.url}"
+     alt="${el.alt}"></li>`);
+console.log(galleryItems);
