@@ -1,26 +1,22 @@
 
-// const ingredients = [
-//   "Potatoes",
-//   "Mushrooms",
-//   "Garlic",
-//   "Tomatos",
-//   "Herbs",
-//   "Condiments",
-// ];
-  
-// console.log(document);
+const ingredients = [
+  "Potatoes",
+  "Mushrooms",
+  "Garlic",
+  "Tomatos",
+  "Herbs",
+  "Condiments",
+]; 
 
-// const body = document.body;
-// console.log(body);
 
-// const list = document.querySelector(".list");
-// console.log(list);
+const list = document.querySelector(".list");
 
-// const firstListItem = list.firstElementChild;
-// console.log(firstListItem);
 
-// const lastListItem = list.lastElementChild;
-// console.log(lastListItem);
+const listItems = ingredients.map(element => {
+  const li = document.createElement('li')
+  li.textContent = element;
+  li.classList.add('item');
+  return li;  
+});
 
-// const listItems = list.children;
-// console.log(listItems);
+list.append(...listItems);
